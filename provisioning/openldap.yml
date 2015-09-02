@@ -1,3 +1,5 @@
 ---
 - hosts: openldap
   sudo: yes
+  roles:
+    - apt-upgrade
