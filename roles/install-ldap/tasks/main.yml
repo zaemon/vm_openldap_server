@@ -1,0 +1,5 @@
+- name: instal ldap server and client
+  apt: name={{ item }}
+  with_items:
+    - slapd
+    - ldap-utils
