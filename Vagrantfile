@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # ansible-playbookコマンドに渡す。
     # hostsには、上のconfig.vm.networkで定義しているipアドレスを書く。
     # localhostでもいいはずだが。
-    sh.args = "provisioning/openldap.yml provisioning/hosts"
+    sh.args = "openldap.yml hosts"
   end
 
   # ↑
